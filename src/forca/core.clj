@@ -19,7 +19,7 @@
       (perdeu)
       (if (acertou-a-palavra-toda? palavra acertos)
           (ganhou)
-          (print "Chupa, amigo!")
+          (print "Quase lá,será que você consegue?")
       )
   )
 )
