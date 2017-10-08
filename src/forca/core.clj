@@ -8,9 +8,7 @@
 (defn ganhou [] (print "Voce ganhou."))
 
 (defn letras-faltantes [palavra acertos]
-    (remove (fn [letra] 
-            (contains? acertos (str letra))
-        ) palavra))
+    (remove (fn [letra] (contains? acertos (str letra))) palavra))
 
 (defn acertou-a-palavra-toda? [palavra acertos]
     (empty? (letras-faltantes palavra acertos))
