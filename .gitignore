@@ -5,7 +5,19 @@ pom.xml
 pom.xml.asc
 *.jar
 *.class
+<<<<<<< HEAD
 /.lein-*
 /.nrepl-port
 .hgignore
 .hg/
+=======
+/lib/
+/classes/
+/target/
+/checkouts/
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+>>>>>>> dd95fd4ce1d5b65880ba8d7f3c6628694217eab5
