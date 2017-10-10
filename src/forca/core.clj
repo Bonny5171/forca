@@ -14,12 +14,23 @@
     (empty? (letras-faltantes palavra acertos))
 )
 
+(defn le-letra! [] (read-line))
+
+(defn acertou? [chute palavra] (.contains palavra chute))
+
+(defn avalia-chute [chute vidas palavra acertos]
+    (if (true)
+        (jogo vidas palavra (conj acertos chute))
+        (jogo (dec vidas) palavra acertos)
+    )
+)
+
 (defn jogo [vidas palavra acertos]
   (if (= vidas 0)
       (perdeu)
       (if (acertou-a-palavra-toda? palavra acertos)
           (ganhou)
-          (print "Quase lá,será que você consegue?")
+          (avalia-chute (le-letra!) vidas palavra acertos)
       )
   )
 )
